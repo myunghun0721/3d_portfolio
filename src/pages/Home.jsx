@@ -40,6 +40,7 @@ const Home = () => {
 
   const [islandScale, islandPosition, islandRotation] = adjustIslandForScreenSize();
   const [planeScale, planePosition] = adjustPlaneForScreenSize();
+  console.log("🚀 ~ Home ~ planePosition:", planePosition)
 
   return (
     <section className='w-full h-screen relative'>
@@ -56,7 +57,7 @@ const Home = () => {
           <hemisphereLight skyColor={"#b1e1ff"} groundColor={"#000"} intensity={1} />
           <Sky isRotating={isRotating}/>
           <Island position={islandPosition} scale={islandScale} rotation={islandRotation} isRotating={isRotating} setIsRotating={setIsRotating} setCurrentStage={setCurrentStage}/>
-          <Plane isRotating={isRotating} planeScale={planeScale} planePosition={planePosition} rotation={[0,20,0]}/>
+          <Plane isRotating={isRotating} scale={planeScale} position={planePosition} rotation={[0,20,0]}/>
         </Suspense>
       </Canvas>
     </section>
