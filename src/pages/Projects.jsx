@@ -43,13 +43,17 @@ const Projects = () => {
                   target='_blank'
                   rel='noopener noreferrer'
                   className='font-semibold text-blue-600'>
-                  Live Link
+                  Git
                 </Link>
-                <img
-                  src={arrow}
-                  alt='arrow'
-                  className='w-4 h-4 object-contain'
-                />
+                <p>|</p>
+                <Link
+                  to={project.live}
+                  target='_blank'
+                  rel='noopener noreferrer'
+                  className='font-semibold text-blue-600'>
+                  Live
+                </Link>
+
               </div>
             </div>
 

@@ -37,7 +37,7 @@ const Contact = () => {
   }
 
   return (
-    <section className='relative flex lg:flex-row flex-col max-container'>
+    <section className='relative flex lg:flex-row flex-col max-container h-[100vh]'>
       <div className='flex-1 min-w-[50%] flex flex-col'>
         <h2 className='head-text'>Get in touch</h2>
         <hr />
@@ -97,7 +97,7 @@ const Contact = () => {
         </form>
 
       </div>
-      <div>
+      <div className='ml-11 mt-11'>
         <br/>
         <h2 className='font-medium'>Contact information</h2>
         <div className="text-white-50"><i className="fa-solid fa-envelope-open-text"></i> myunghun0721@gmail.com
