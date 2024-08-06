@@ -19,12 +19,12 @@ const renderContent = {
         <h1 className='sm:text-xl sm:leading-snug text-center neo-brutalism-blue py-4 px-8 text-white mx-5'>
             Hi, I am <span className='font-semibold'>Myunghun Choi</span> 👻
             <br />
-            A full-stack engineer with a passion for interactive development.
+            You can interact this cool island by using arrow-key or your mouse.
         </h1>
     ),
     2: (
         <InfoBox
-            text="Hello, my name is Myunghun Choi, but you can call me Hun Choi."
+            text="Hello, my name is Myunghun Choi, but you can call me Hun. I'm a full-stack engineer with a passion for interactive development."
             link={"/about"}
             btnText={"Learn more"}
         />
@@ -38,7 +38,7 @@ const renderContent = {
     ),
     4: (
         <InfoBox
-            text="Currently seeking for a full-time software engineering jobs! Please contact me!"
+            text="I'm currently looking for a full-time entry-level software engineering positions! Please contact me!"
             link={"/contact"}
             btnText={"Let's talk"}
         />

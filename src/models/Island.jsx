@@ -73,7 +73,7 @@ const Island = ({ isRotating, setIsRotating, setCurrentStage, ...props }) => {
 
     useFrame((_, delta) => {
         if (!isRotating) {
-            islandRef.current.rotation.y -= 0.1 * delta
+            // islandRef.current.rotation.y -= 0.1 * delta
             rotationSpeed.current *= dampingFactor
 
             if (Math.abs(rotationSpeed.current) < 0.001) {
